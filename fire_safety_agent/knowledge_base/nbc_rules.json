@@ -1,0 +1,62 @@
+[
+  {
+    "id": "NBC_001",
+    "category": "OCCUPANCY",
+    "rule": "Business occupancy (Group E) includes offices, banks, and professional establishments.",
+    "reference": "NBC 2016 Part 4, Clause 2.1"
+  },
+  {
+    "id": "NBC_002",
+    "category": "SPRINKLER",
+    "rule": "Wet pipe sprinkler systems are required for Mechanical rooms under Ordinary Hazard Group 1.",
+    "reference": "NBC 2016 Part 4, Clause 5.1.3 and Table 7"
+  },
+  {
+    "id": "NBC_003",
+    "category": "DETECTOR",
+    "rule": "Heat detectors are preferred in mechanical rooms due to presence of equipment that may cause false alarms with smoke detectors.",
+    "reference": "NBC 2016 Part 4, Clause 5.1.1(a)"
+  },
+  {
+    "id": "NBC_004",
+    "category": "EXITS",
+    "rule": "Every floor with occupancy load exceeding 50 persons shall have minimum 2 exits. Exceeding 500 persons requires minimum 3 exits.",
+    "reference": "NBC 2016 Part 4, Clause 4.2"
+  },
+  {
+    "id": "NBC_005",
+    "category": "TRAVEL_DISTANCE",
+    "rule": "Maximum travel distance to exit for Business occupancy is 30 metres in non-sprinklered buildings and 45 metres in sprinklered buildings.",
+    "reference": "NBC 2016 Part 4, Table 5"
+  },
+  {
+    "id": "NBC_006",
+    "category": "FIRE_RATING",
+    "rule": "Staircase enclosures in buildings above 15m height shall have fire resistance rating of minimum 2 hours.",
+    "reference": "NBC 2016 Part 4, Clause 3.4"
+  },
+  {
+    "id": "NBC_007",
+    "category": "EXTINGUISHER",
+    "rule": "CO2 or dry powder extinguishers are required in electrical and mechanical rooms. Water-type extinguishers are prohibited.",
+    "reference": "NBC 2016 Part 4, Clause 6.1"
+  },
+  {
+    "id": "NBC_008",
+    "category": "HYDRAULIC",
+    "rule": "For Group E Business occupancy below 15m height, wet riser is not mandatory. Above 15m, wet riser with terrace tank minimum 25000 litres is required.",
+    "reference": "NBC 2016 Part 4, Table 7 Group E"
+  },
+  {
+    "id": "NBC_009",
+    "category": "HYDRAULIC",
+    "rule": "Light Hazard occupancy design density is 2.25 lpm/m2 over 84m2 design area. Ordinary Hazard Group 1 is 5.0 lpm/m2 over 72m2.",
+    "reference": "NBC 2016 Part 4, Clause 5.3"
+  },
+  {
+    "id": "NBC_010",
+    "category": "SPRINKLER_COVERAGE",
+    "rule": "Maximum coverage area per sprinkler head for Light Hazard is 21m2 and for Ordinary Hazard Group 1 is 12m2.",
+    "reference": "NBC 2016 Part 4, Table 9"
+  }
+]

@@ -1,0 +1,23 @@
+# Environment variables - NEVER commit this
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Output files
+output/
+
+# IDE
+.vscode/
+.idea/
+
+# Qdrant local storage (if any)
+qdrant_storage/

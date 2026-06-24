@@ -1,0 +1,10 @@
+langgraph
+langchain
+langchain-openai
+openai
+ezdxf
+pymupdf
+qdrant-client
+python-docx
+python-dotenv
+tiktoken
