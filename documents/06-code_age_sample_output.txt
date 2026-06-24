@@ -1,0 +1,101 @@
+As per today’s discussion expected Code agent sample output. Please refer.
+
+[
+
+  {
+
+    "room_number": "126A",
+
+    "room_type": "Mechanical",
+
+    "area_sqft": null,
+
+    "capacity": null,
+
+    "ceiling_height_ft": null,
+
+    "zone_type": "UTILITY",
+
+    "hazards": [
+
+      "MECHANICAL EQUIPMENT"
+
+    ],
+
+    "geometry": {
+
+      "area_cad_units": 58275.75,
+
+      "centroid": [
+
+        69222453.12,
+
+        27677241.14
+
+      ],
+
+      "bbox": [
+
+        69222293.71,
+
+        27677100.43,
+
+        69222608.61,
+
+        27677375.22
+
+      ]
+
+    },
+
+    "code_agent_version": "rag_v2",
+
+    "fire_requirements": {
+
+      "mapped_category": "MECHANICAL_ROOM",
+
+      "hazard_class": "Not specified",
+
+      "sprinkler_required": true,
+
+      "sprinkler_system_type": "Wet pipe",
+
+      "detector_required": true,
+
+      "detector_type": "Heat detector preferred",
+
+      "manual_call_point_required": false,
+
+      "extinguisher_required": true,
+
+      "special_suppression_required": false,
+
+      "special_suppression_type": null,
+
+      "classification_confidence": "HIGH",
+
+      "confidence_reason": "The room type 'Mechanical' maps directly to the 'MECHANICAL_ROOM' category, which has specific fire safety requirements per NBC.",
+
+      "rule_type_used": [
+
+        "NBC"
+
+      ],
+
+      "review_required": false,
+
+      "review_reason": null,
+
+      "assumptions": [],
+
+      "rule_references": [
+
+        "NBC 2016 Part 4, Clause 5.1.3 and Table 7",
+
+        "NBC 2016 Part 4, Clause 5.1.1(a) and Table 7"
+
+      ]
+
+    }
+
+  },

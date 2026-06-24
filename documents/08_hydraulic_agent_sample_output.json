@@ -1,0 +1,103 @@
+{
+  "hydraulic_agent_version": "hydraulic_v1",
+  "input_file": "output/system_design_v1.json",
+  "assumptions": {
+    "building_height_m": 15.0,
+    "height_assumed": true,
+    "friction_loss_bar": 0.5,
+    "municipal_pressure_bar": 2.0,
+    "cad_scale": "1 CAD unit = 0.9655 inches = 1/40.77 metres",
+    "geometry_scale_verified": false,
+    "design_area_method": "largest_rooms_proxy",
+    "dominant_hazard_method": "priority_based_v1",
+    "note": "V1 simplified: friction loss estimated, design area not verified as contiguous, dominant hazard by class not flow. V2 recalculates after Layout Agent."
+  },
+  "building_summary": {
+    "total_rooms": 15,
+    "sprinklered_rooms": 14,
+    "total_sprinklered_area_m2": 546.22,
+    "dominant_hazard_class": "Ordinary Hazard Group 1 (OH1)",
+    "occupancy_group": "Group E \u2014 Business"
+  },
+  "zone_summary": {
+    "Ordinary Hazard Group 1 (OH1)": {
+      "room_count": 2,
+      "total_area_m2": 75.56,
+      "rooms": [
+        "126A",
+        "126"
+      ]
+    },
+    "Light Hazard (LH)": {
+      "room_count": 12,
+      "total_area_m2": 470.66,
+      "rooms": [
+        "E101",
+        "103",
+        "109A",
+        "109",
+        "110F",
+        "106",
+        "C101",
+        "133",
+        "131",
+        "L113",
+        "131A",
+        "C102"
+      ]
+    }
+  },
+  "design_area": {
+    "target_m2": 72.0,
+    "actual_m2": 96.06,
+    "method": "largest_rooms_proxy",
+    "contiguity_verified": false,
+    "rooms_in_design_area": [
+      {
+        "room_number": "131",
+        "room_type": "Staff Office",
+        "area_m2": 96.06
+      }
+    ]
+  },
+  "sprinkler_design": {
+    "system_type": "Wet pipe",
+    "hazard_class": "Ordinary Hazard Group 1 (OH1)",
+    "design_density_lpm_m2": 5.0,
+    "coverage_m2_per_head": 12.0,
+    "k_factor": 8.0,
+    "estimated_heads_in_design_area": 9,
+    "min_flow_per_head_lpm": 81.54,
+    "min_pressure_per_head_bar": 0.5
+  },
+  "water_demand": {
+    "sprinkler_demand_lpm": 480.3,
+    "hose_stream_lpm": 1125,
+    "total_demand_lpm": 1605.3,
+    "total_demand_m3h": 96.32
+  },
+  "pressure": {
+    "min_pressure_at_head_bar": 0.5,
+    "estimated_friction_loss_bar": 0.5,
+    "required_pressure_at_source_bar": 1.0,
+    "available_municipal_pressure_bar": 2.0,
+    "margin_bar": 1.0,
+    "pump_required": false,
+    "note": "Negative margin = pump mandatory"
+  },
+  "water_storage": {
+    "height_range": "Up to 15m",
+    "underground_sump_litres": 0,
+    "terrace_tank_litres": 0,
+    "pump_capacity_lpm": 0,
+    "nbc_reference": "NBC 2016 Part 4 Table 7 \u2014 Group E",
+    "note": "Wet riser not required below 15m for Group E"
+  },
+  "review_required": true,
+  "review_notes": [
+    "\u26a0\ufe0f  Building height assumed at 15m \u2014 verify from drawings",
+    "\u26a0\ufe0f  CAD scale not verified \u2014 confirm 1 CAD unit = 0.9655 inches for this drawing",
+    "\u26a0\ufe0f  Design area uses largest-rooms proxy \u2014 verify contiguity on floor plan",
+    "\u26a0\ufe0f  Friction loss estimated at 0.5 bar \u2014 recalculate after Layout Agent V2"
+  ]
+}

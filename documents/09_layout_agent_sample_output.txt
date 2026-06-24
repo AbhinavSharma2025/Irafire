@@ -1,0 +1,23 @@
+Sample output for layout agent. Please refer.
+
+{
+
+      "room_number": "110F",
+
+      "room_type": "Staff Office",
+
+      "area_m2": 12.98,
+
+      "device_count": 3,
+
+      "devices": {
+
+        "Sprinkler Head": 1,
+
+        "Smoke detector": 1,
+
+        "ABC dry powder extinguisher": 1
+
+      }
+
+    },

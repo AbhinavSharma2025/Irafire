@@ -1,0 +1,36 @@
+Hi Team,
+
+As per today’s discussion below is the sample system_design_agent output. Please refer
+
+output:
+
+    "system_design_agent_version": "system_design_v1",
+
+    "system_design": {
+
+      "detection_system": "Heat detector",
+
+      "sprinkler_system": "Wet pipe",
+
+      "suppression_system": null,
+
+      "extinguisher_type": "CO2 or dry powder extinguisher",
+
+      "alarm_devices": [],
+
+      "design_notes": [
+
+        "Heat detectors are preferred for mechanical rooms due to potential presence of mechanical equipment.",
+
+        "Wet pipe sprinkler system is required for fire suppression."
+
+      ],
+
+      "review_required": false,
+
+      "review_reason": null
+
+    }
+
+  },
+

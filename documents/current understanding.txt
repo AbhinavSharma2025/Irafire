@@ -1,0 +1,117 @@
+My current understanding of the target architecture is:
+
+Input Layer
+DWG/DXF CAD files
+PDF floor plans
+Building specification documents
+Occupancy information
+Agent Layer
+1. Fire & Safety Engineer Agent
+
+Responsible for:
+
+Occupancy classification
+Hazard identification
+Fire load estimation
+Applicable code selection
+NBC India
+NFPA
+Local regulations
+Compliance checking
+
+Output:
+
+{
+  "occupancy": "Business",
+  "risk_level": "Moderate",
+  "required_fire_rating": "2 hours",
+  "required_exits": 3,
+  "applicable_codes": [...]
+}
+2. CAD Draftsman Agent
+
+Responsible for:
+
+Reading DWG/DXF
+Extracting rooms, walls, doors, stairs
+Creating annotated layouts
+Marking equipment locations
+
+Output:
+
+{
+  "floor_area": 2500,
+  "rooms": [...],
+  "doors": [...],
+  "staircases": [...]
+}
+
+and updated CAD drawings.
+
+3. System Design Agent
+
+Responsible for:
+
+Sprinkler placement
+Smoke detector placement
+Heat detector placement
+Fire extinguisher placement
+Fire alarm zoning
+
+Output:
+
+{
+  "sprinklers": [...],
+  "detectors": [...],
+  "extinguishers": [...]
+}
+4. Hydraulic Agent
+
+Responsible for:
+
+Pipe routing
+Pipe sizing
+Water demand calculation
+Pressure calculations
+Pump sizing
+Tank sizing
+
+Output:
+
+{
+  "required_flow": "...",
+  "pump_capacity": "...",
+  "pipe_diameter": "...",
+  "pressure_loss": "..."
+}
+5. Code Compliance Agent
+
+Responsible for:
+
+Rule validation
+Code references
+Compliance score
+Violation reporting
+
+Output:
+
+{
+  "compliance_score": 92,
+  "violations": [...]
+}
+6. Report Generation Agent
+
+Responsible for:
+
+Combining all agent outputs
+Creating final PDF report
+Generating drawings
+Producing BOQ (Bill of Quantities)
+
+Output:
+
+Fire Safety Design Report
+Hydraulic Calculations
+Equipment Schedule
+Compliance Report
+Cost Estimation
