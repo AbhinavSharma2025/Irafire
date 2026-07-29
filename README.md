@@ -43,29 +43,17 @@ IraFire replicates this entire workflow as a **LangGraph multi-agent pipeline** 
 
 ## 🏗 Architecture
 
-┌─────────────────────────────────────────────────────────────┐
-│ INPUT LAYER │
-│ DXF/DWG · PDF Floor Plans · Building Specs │
-└──────────────────────────┬──────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│ AGENT LAYER · LangGraph StateGraph │
-│ │
-│ CAD Parser → Fire & Safety → Code Agent → System Design │
-│ → Hydraulic → Compliance → Report │
-│ │
-│ ↕ QdrantDB Knowledge Base │
-│ NBC India 2016 · NFPA Rules │
-└──────────────────────────┬──────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│ OUTPUT LAYER │
-│ Compliance Report · Hydraulic Calcs · Room Analysis │
-│ Equipment Schedule · Violation Log · .docx Report │
-└─────────────────────────────────────────────────────────────┘
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AbhinavSharma2025/Irafire/main/documents/irafire_system_architecture.png" alt="IraFire System Architecture" width="750"/>
+</div>
 
+<br/>
+
+## 🔀 LangGraph Pipeline
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AbhinavSharma2025/Irafire/main/documents/irafire_langgraph_pipeline.png" alt="IraFire LangGraph Pipeline" width="450"/>
+</div>
 
 **The shared state** (`FireSafetyState`) flows through every node — each agent reads what it needs and writes its output back, making the full context available downstream.
 
