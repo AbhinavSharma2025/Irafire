@@ -103,28 +103,35 @@ Rules are embedded **once** at setup and reused across all runs — making ongoi
 
 ## 🗂 Project Structure
 
-fire_safety_agent/
-├── agents/
-│ ├── fire_safety_agent.py # Occupancy & hazard classification
-│ ├── code_agent.py # RAG-powered NBC rule lookup
-│ ├── system_design_agent.py # Equipment specification
-│ ├── hydraulic_agent.py # Hydraulic calculations (pure Python)
-│ ├── compliance_agent.py # Violation detection (pure Python)
-│ └── report_agent.py # Word document generation
-├── tools/
-│ ├── cad_parser.py # DXF/PDF parsing & geometry extraction
-│ ├── cad_parser_node.py # LangGraph wrapper for CAD parser
-│ └── qdrant_tools.py # Vector DB embed + search utilities
-├── pipeline/
-│ └── graph.py # LangGraph StateGraph definition
-├── knowledge_base/
-│ └── nbc_rules.json # Curated NBC India 2016 fire code rules
-├── config.py # API keys & configuration
-├── main.py # Pipeline entry point
+## 🗂 Project Structure
+
+```
+📦 fire_safety_agent
+├── 🤖 agents/
+│   ├── fire_safety_agent.py       # Occupancy & hazard classification
+│   ├── code_agent.py              # RAG-powered NBC rule lookup
+│   ├── system_design_agent.py     # Equipment specification per room
+│   ├── hydraulic_agent.py         # Hydraulic calculations (pure Python)
+│   ├── compliance_agent.py        # Violation detection (pure Python)
+│   └── report_agent.py            # Word document generation
+│
+├── 🛠 tools/
+│   ├── cad_parser.py              # DXF/PDF parsing & geometry extraction
+│   ├── cad_parser_node.py         # LangGraph wrapper for CAD parser
+│   └── qdrant_tools.py            # Vector DB embed + search utilities
+│
+├── 🔗 pipeline/
+│   └── graph.py                   # LangGraph StateGraph definition
+│
+├── 📚 knowledge_base/
+│   └── nbc_rules.json             # Curated NBC India 2016 fire code rules
+│
+├── 📁 output/                     # Generated reports land here
+│
+├── config.py                      # API keys & configuration
+├── main.py                        # Pipeline entry point
 └── requirements.txt
-
-
----
+```
 
 ## ⚙️ Setup
 
